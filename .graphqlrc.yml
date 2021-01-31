@@ -1,0 +1,9 @@
+projects:
+  app:
+    schema: http://localhost:8010/proxy/api/graphql?token=xyz
+    extensions:
+      codegen:
+        generates:
+          ./schema.graphql:
+            plugins:
+              - schema-ast
